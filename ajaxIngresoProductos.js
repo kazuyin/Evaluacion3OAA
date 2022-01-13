@@ -57,6 +57,17 @@ function calcular(){
   //}
   txt+="</tr>";
   document.getElementById('demo2').innerHTML=txt;
+  if (valorTotal>30000) {
+    document.getElementById('cupon').innerHTML="gano cupon 'yolo90'"
+  }else if (valorTotal>15000) {
+    document.getElementById('cupon').innerHTML="gano cupon 'chi50'"
+  }else if (valorTotal>8000) {
+    document.getElementById('cupon').innerHTML="gano cupon 'gato30'"
+  }else if (valorTotal>5000) {
+    document.getElementById('cupon').innerHTML="gano cupon 'gana20'"
+  }else if (valorTotal>3000) {
+    document.getElementById('cupon').innerHTML="gano cupon 'bit10'"
+  }
   //let txt="bruto: "+sumatotal+"<br>";
   //      txt+="iva: "+sumaiva+"<br>";
   //      txt+="neto: "+neto+"<br>";
